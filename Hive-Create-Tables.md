@@ -42,5 +42,6 @@ CREATE TABLE page_view(
 
 ```
 
+### clustered 和 buckets 问题
 
 
