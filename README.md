@@ -1,4 +1,4 @@
 # SQL-Learning
 Here is a personal SQL learning notes; 
 
-[Hive](https://github.com/ConnorLi96/SQL-Learning/blob/master/Hive.md) 
+[Hive Create Tables](https://github.com/ConnorLi96/SQL-Learning/blob/master/Hive-Create-Tables.md) 
