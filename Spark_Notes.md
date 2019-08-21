@@ -10,3 +10,31 @@
 ```spark.read.format('csv').options(header='true', inferschema ='true').option("delimiter", "\t").load('hdfs://hdp01.gridb.io:8020/user/hive/warehouse/spark_hive_test').show()```
 
 ```data.write.save('hdfs://hdp01.gridb.io:8020/user/hive/warehouse/save_test')```
+
+
+成功搭建的环境变量：
+
+```
+SSH_CONNECTION=113.89.237.21 39709 172.31.40.179 22
+LESSCLOSE=/usr/bin/lesspipe %s %s
+LANG=C.UTF-8
+S_COLORS=auto
+XDG_SESSION_ID=59484
+USER=work
+GOPATH=/home/work/go
+PWD=/home/work
+HOME=/home/work
+SSH_CLIENT=113.89.237.21 39709 22
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+SSH_TTY=/dev/pts/0
+MAIL=/var/mail/work
+TERM=xterm-256color
+SHELL=/bin/bash
+SHLVL=1
+LOGNAME=work
+XDG_RUNTIME_DIR=/run/user/1001
+PYSPARK_PYTHON=python3
+PATH=/home/work/.local/bin:/home/work/bin:/home/work/go/bin:/home/work/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/go/bin:/snap/bin:/usr/local/go/bin
+LESSOPEN=| /usr/bin/lesspipe %s
+_=/usr/bin/env
+```
