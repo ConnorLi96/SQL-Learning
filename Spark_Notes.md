@@ -1,5 +1,6 @@
 ## 安装
 ### spark
+- pip install -i https://pypi.tuna.tsinghua.edu.cn/simple 使用镜像提升下载速度
 - pyspark 常见路径 ```/home/work/.local/lib/python3.6/site-packages/pyspark/jars```
 - pyspark --jars 'path' 初始化依赖 jar 包
 - ```pip show```可以看到安装路径
