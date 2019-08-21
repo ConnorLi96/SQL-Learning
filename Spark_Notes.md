@@ -1,10 +1,16 @@
 ## 安装
+### spark
 - pyspark 常见路径 ```/home/work/.local/lib/python3.6/site-packages/pyspark/jars```
 - pyspark --jars 'path' 初始化依赖 jar 包
 - ```pip show```可以看到安装路径
 - 然后把路径对应更改到 bash 文件夹里面
 - bash 文件对应的只是一个 bash 窗口，其他的就不行
 
+### jupyter notebook
+- 一般情况下需要 notebook 做 IDE
+- 貌似需要虚拟环境
+- 需要设置密码以及配置文件
+- 对应的 python 要和 spark一致
 
 ## hive 
 ```spark.read.format('csv').options(header='true', inferschema ='true').option("delimiter", "\t").load('hdfs://hdp01.gridb.io:8020/user/hive/warehouse/spark_hive_test').show()```
