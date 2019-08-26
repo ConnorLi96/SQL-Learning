@@ -9,9 +9,18 @@
 
 ### jupyter notebook
 - 一般情况下需要 notebook 做 IDE
-- 貌似需要虚拟环境
+- 可以不需要虚拟环境
 - 需要设置密码以及配置文件
 - 对应的 python 要和 spark一致
+- jupyter notebook --generate config
+- jupyter notebook password
+- 然后更改配置文件
+```
+c.NotebookApp.ip='*'
+c.NotebookApp.password = u'sha1:234c7b4ef8a7:cf707a23a01ae2e70289568cd3ef2b493815f29c'
+c.NotebookApp.open_browser = True
+c.NotebookApp.port =8888
+```
 
 ## hive 
 ```spark.read.format('csv').options(header='true', inferschema ='true').option("delimiter", "\t").load('hdfs://hdp01.gridb.io:8020/user/hive/warehouse/spark_hive_test').show()```
