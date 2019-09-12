@@ -2,10 +2,12 @@
 ### spark
 - pip install -i https://pypi.tuna.tsinghua.edu.cn/simple 使用镜像提升下载速度
 - pyspark 常见路径 ```/home/work/.local/lib/python3.6/site-packages/pyspark/jars```
-- pyspark --jars 'path' 初始化依赖 jar 包
+- pyspark --jars 'path' 初始化依赖 jar 包 添加依赖 jar 包 
 - ```pip show```可以看到安装路径
 - 然后把路径对应更改到 bash 文件夹里面
 - bash 文件对应的只是一个 bash 窗口，其他的就不行
+
+
 
 ### jupyter notebook
 - 一般情况下需要 notebook 做 IDE
@@ -20,6 +22,12 @@ c.NotebookApp.ip='*'
 c.NotebookApp.password = u'sha1:234c7b4ef8a7:cf707a23a01ae2e70289568cd3ef2b493815f29c'
 c.NotebookApp.open_browser = True
 c.NotebookApp.port =8888
+```
+
+jupyter 和 spark 交互，export 之后进入输入 pyspark 就可以了
+```
+export PYSPARK_DRIVER_PYTHON=jupyter
+export PYSPARK_DRIVER_PYTHON_OPTS='notebook' pyspark
 ```
 
 ## hive 
