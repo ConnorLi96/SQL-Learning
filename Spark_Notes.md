@@ -10,9 +10,7 @@
 #### spark debug
 - 环境：CDH 6.3，pip3 install pyspark
 - HADOOP_CONF_DIR 问题
-```Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.``` 
-
-(尝试解决)[https://dongkelun.com/2018/04/16/sparkOnYarnConf/]
+- ```Neither spark.yarn.jars nor spark.yarn.archive is set, falling back to uploading libraries under SPARK_HOME.``` (尝试解决)[https://dongkelun.com/2018/04/16/sparkOnYarnConf/]
 
 
 ### jupyter notebook
